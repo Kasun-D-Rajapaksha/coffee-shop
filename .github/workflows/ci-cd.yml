@@ -31,11 +31,16 @@ jobs:
           cache: npm
           cache-dependency-path: e2e/package-lock.json
 
+      - name: Install E2E dependencies
+        working-directory: e2e
+        run: npm ci
+
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          project: ./e2e
-          start: python3 -m http.server 8080
+          install: false
+          working-directory: e2e
+          start: bash -c 'cd "$GITHUB_WORKSPACE" && python3 -m http.server 8080'
           wait-on: http://127.0.0.1:8080
           browser: chrome
         env:

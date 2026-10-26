@@ -35,14 +35,15 @@ jobs:
         working-directory: e2e
         run: npm ci
 
+      - name: Start static server
+        run: python3 -m http.server 8080 &
+
+      - name: Wait for site
+        run: npx --yes wait-on@8.0.1 http://127.0.0.1:8080 --timeout 60000
+
       - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          install: false
-          working-directory: e2e
-          start: bash -c 'cd "$GITHUB_WORKSPACE" && python3 -m http.server 8080'
-          wait-on: http://127.0.0.1:8080
-          browser: chrome
+        working-directory: e2e
+        run: npx cypress run --browser chrome
         env:
           CYPRESS_BASE_URL: http://127.0.0.1:8080
 

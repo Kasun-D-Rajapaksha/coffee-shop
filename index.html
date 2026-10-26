@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ember &amp; Cream — boutique coffee in Colombo. Freshly roasted beans, artisan drinks, and a welcoming café experience.">
+  <title>Ember &amp; Cream | Boutique Coffee Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Ember and Cream home">
+        <span class="logo-mark" aria-hidden="true">E</span>
+        Ember &amp; Cream
+      </a>
+      <nav class="nav-desktop" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display: flex; align-items: center;">
+        <button type="button" class="dark-mode-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+          </svg>
+          <svg class="moon-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+          </svg>
+        </button>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg">
+        <img src="assets/images/hero.webp" alt="" width="1920" height="1280" fetchpriority="high">
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Colombo · Since 2019</p>
+        <h1 id="hero-heading">Your Daily Dose of Happiness.</h1>
+        <p class="hero-desc">
+          Freshly brewed coffee, small-batch roasting, and a calm corner to slow down.
+          Every cup is crafted with care in our boutique café.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore Our Menu</a>
+          <a class="btn btn-outline" href="#contact">Find Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="about-heading">Our Story</h2>
+          <p>A neighborhood café built on warmth, quality, and the simple ritual of a perfect cup.</p>
+        </header>
+        <div class="about-grid">
+          <figure class="about-image reveal">
+            <img src="assets/images/about.webp" alt="Barista pouring latte art at Ember and Cream" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="about-text reveal">
+            <h3>Roasted with intention</h3>
+            <p>
+              Ember &amp; Cream began as a dream to bring specialty coffee culture to Colombo —
+              without losing the comfort of your favorite local spot. We source beans from
+              trusted farms, roast in small batches, and serve each drink at its best.
+            </p>
+            <p>
+              Our space is designed for conversation, reading, and quiet mornings alike.
+              Pastries arrive fresh each day from local bakers who share our obsession with quality ingredients.
+            </p>
+            <div class="about-features">
+              <div class="about-feature">
+                <span class="about-feature-icon" aria-hidden="true">☕</span>
+                <div>
+                  <strong>Freshly roasted</strong>
+                  <p style="margin:0;font-size:0.9375rem;color:var(--text-muted)">Beans roasted weekly for peak flavor.</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <span class="about-feature-icon" aria-hidden="true">🌿</span>
+                <div>
+                  <strong>Quality ingredients</strong>
+                  <p style="margin:0;font-size:0.9375rem;color:var(--text-muted)">Organic milk options and seasonal specials.</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <span class="about-feature-icon" aria-hidden="true">🤎</span>
+                <div>
+                  <strong>Welcoming atmosphere</strong>
+                  <p style="margin:0;font-size:0.9375rem;color:var(--text-muted)">A boutique café feel, never rushed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section" aria-labelledby="menu-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="menu-heading">Our Menu</h2>
+          <p>Espresso classics, iced favorites, signature creations, and fresh pastries — prices in LKR.</p>
+        </header>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+          <button type="button" class="menu-tab active" role="tab" aria-selected="true" data-category="espresso">Espresso</button>
+          <button type="button" class="menu-tab" role="tab" aria-selected="false" data-category="cappuccino">Cappuccino</button>
+          <button type="button" class="menu-tab" role="tab" aria-selected="false" data-category="latte">Caffè Latte</button>
+          <button type="button" class="menu-tab" role="tab" aria-selected="false" data-category="americano">Americano</button>
+          <button type="button" class="menu-tab" role="tab" aria-selected="false" data-category="iced">Iced Coffee</button>
+          <button type="button" class="menu-tab" role="tab" aria-selected="false" data-category="signature">Signature</button>
+          <button type="button" class="menu-tab" role="tab" aria-selected="false" data-category="pastries">Pastries</button>
+        </div>
+
+        <div class="menu-category active" data-category="espresso" role="tabpanel">
+          <div class="menu-grid reveal">
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/espresso.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Single Espresso</h3><span class="menu-price">Rs. 650</span></div>
+                <p>Rich, concentrated shot from our house blend — bold caramel notes.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/latte.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Double Espresso</h3><span class="menu-price">Rs. 850</span></div>
+                <p>Two shots for a deeper, fuller espresso experience.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/signature.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Macchiato</h3><span class="menu-price">Rs. 750</span></div>
+                <p>Espresso marked with a dollop of velvety steamed milk foam.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category" data-category="cappuccino" role="tabpanel" hidden>
+          <div class="menu-grid reveal">
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/cappuccino.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Classic Cappuccino</h3><span class="menu-price">Rs. 950</span></div>
+                <p>Equal parts espresso, steamed milk, and thick microfoam.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/latte.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Vanilla Cappuccino</h3><span class="menu-price">Rs. 1,050</span></div>
+                <p>House vanilla syrup folded into our signature cappuccino.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/cappuccino.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Cinnamon Cappuccino</h3><span class="menu-price">Rs. 1,050</span></div>
+                <p>Warming Ceylon cinnamon dusted over creamy foam.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category" data-category="latte" role="tabpanel" hidden>
+          <div class="menu-grid reveal">
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/caffe-latte.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Classic Caffè Latte</h3><span class="menu-price">Rs. 1,100</span></div>
+                <p>Smooth espresso with steamed milk — perfect for latte art.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/latte.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Caramel Latte</h3><span class="menu-price">Rs. 1,250</span></div>
+                <p>Slow-cooked caramel paired with our medium roast.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/caffe-latte.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Hazelnut Latte</h3><span class="menu-price">Rs. 1,250</span></div>
+                <p>Toasted hazelnut syrup and a double shot of espresso.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category" data-category="americano" role="tabpanel" hidden>
+          <div class="menu-grid reveal">
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/americano.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Hot Americano</h3><span class="menu-price">Rs. 800</span></div>
+                <p>Espresso lengthened with hot water — clean and aromatic.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/americano.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Long Black</h3><span class="menu-price">Rs. 850</span></div>
+                <p>Water first, then espresso — preserves crema and body.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category" data-category="iced" role="tabpanel" hidden>
+          <div class="menu-grid reveal">
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/iced.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Iced Americano</h3><span class="menu-price">Rs. 900</span></div>
+                <p>Chilled and bright — ideal for Colombo afternoons.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/iced.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Iced Latte</h3><span class="menu-price">Rs. 1,200</span></div>
+                <p>Espresso over ice with cold milk, lightly sweetened optional.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/signature.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Cold Brew</h3><span class="menu-price">Rs. 1,150</span></div>
+                <p>18-hour steep — chocolatey, smooth, served over ice.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category" data-category="signature" role="tabpanel" hidden>
+          <div class="menu-grid reveal">
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/signature.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Ember Mocha</h3><span class="menu-price">Rs. 1,450</span></div>
+                <p>Dark chocolate, espresso, and whipped cream — our bestseller.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/interior.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Coconut Cream Latte</h3><span class="menu-price">Rs. 1,350</span></div>
+                <p>Local coconut cream with a hint of palm sugar.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/signature.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Spiced Chai Latte</h3><span class="menu-price">Rs. 1,200</span></div>
+                <p>Ceylon spices simmered with black tea and steamed milk.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category" data-category="pastries" role="tabpanel" hidden>
+          <div class="menu-grid reveal">
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/croissant.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Butter Croissant</h3><span class="menu-price">Rs. 650</span></div>
+                <p>Flaky, golden layers — baked fresh every morning.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/pastry.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Almond Danish</h3><span class="menu-price">Rs. 750</span></div>
+                <p>Toasted almonds and frangipane on buttery pastry.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/muffin.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>Blueberry Muffin</h3><span class="menu-price">Rs. 550</span></div>
+                <p>Bursting with berries and a crisp sugar top.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-image"><img src="assets/images/cheesecake.webp" alt="" width="800" height="500" loading="lazy"></div>
+              <div class="menu-card-body">
+                <div class="menu-card-header"><h3>New York Cheesecake</h3><span class="menu-price">Rs. 950</span></div>
+                <p>Creamy slice with seasonal berry compote.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hours" class="hours-section" aria-labelledby="hours-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="hours-heading">Opening Hours</h2>
+          <p>Drop in for your morning ritual or an unhurried afternoon break.</p>
+        </header>
+        <div class="hours-grid reveal">
+          <div class="hours-card">
+            <div class="hours-row"><span class="hours-day">Monday – Friday</span><span class="hours-time">7:00 AM – 8:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8:00 AM – 9:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">8:00 AM – 6:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Public holidays</span><span class="hours-time">9:00 AM – 5:00 PM</span></div>
+          </div>
+          <p class="hours-note">Kitchen closes 30 minutes before closing time. Last espresso orders welcome until we lock the door.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="contact-heading">Visit Us</h2>
+          <p>We would love to welcome you. Replace placeholder details with your real info when ready.</p>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Ember &amp; Cream</h3>
+            <ul class="contact-list">
+              <li>
+                <strong>Address</strong>
+                42 Park Street, Colombo 02<span class="placeholder-tag">Placeholder</span>
+              </li>
+              <li>
+                <strong>Phone</strong>
+                <a href="tel:+94112345678">+94 11 234 5678</a><span class="placeholder-tag">Placeholder</span>
+              </li>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:hello@emberandcream.lk">hello@emberandcream.lk</a><span class="placeholder-tag">Placeholder</span>
+              </li>
+            </ul>
+            <a class="btn btn-caramel" href="https://www.google.com/maps/search/?api=1&amp;query=42+Park+Street+Colombo+02" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            <div class="social-links" style="margin-top:1.75rem" aria-label="Social media">
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (placeholder)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (placeholder)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-map reveal">
+            <iframe
+              title="Map showing Ember and Cream location placeholder in Colombo"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=79.842%2C6.910%2C79.862%2C6.930&amp;layer=mapnik&amp;marker=6.92%2C79.852"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="logo"><span class="logo-mark" aria-hidden="true">E</span> Ember &amp; Cream</a>
+          <p>Boutique coffee, warm hospitality, and a place to belong — in the heart of Colombo.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p style="margin:0 0 0.5rem">42 Park Street, Colombo 02</p>
+          <p style="margin:0 0 0.5rem"><a href="tel:+94112345678">+94 11 234 5678</a></p>
+          <p style="margin:0"><a href="mailto:hello@emberandcream.lk">hello@emberandcream.lk</a></p>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span id="year"></span> Ember &amp; Cream. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
